@@ -1,3 +1,6 @@
+import ReactPlayer from "react-player"
+import Grid from "../demo/grid/Grid"
+
 const projectList= [
     {
         id:"leds",
@@ -10,7 +13,15 @@ const projectList= [
             "Récupération de l'audio courante du téléphone et affichage de celle-ci.",
             "Traitement du signal audio pour le transformer en quotient de luminosité sur les LEDs"
         ],
-        skills: [ "Rétroingénierie", "Android Studio", "Veille technologique", "Gestion de projet", "Traitement du son", "Java"]
+        skills: [ "Rétroingénierie", "Android Studio", "Veille technologique", "Gestion de projet", "Traitement du son", "Java"],
+        template: "neon",
+        demo: (<ReactPlayer
+            className='react-player neon-border'
+            url={`/assets/leds/video.mp4`}
+            width={'fit-content'}
+            height={'90%'}
+            controls = {true}
+        />)
     },
     {
         id:"motsfleches",
@@ -19,12 +30,22 @@ const projectList= [
         steps: [
             "Récupération d'une application node.js existante sur Git ancienne de 5 ans.",
             "Mise à jour de l'application avec les derniers packages en React.js",
-            "Ajout d'une communication réseau multijoueur pour modifier la grille en même temps.",
-            "Récupération de nouvelles grilles via API publique"
+            "Ajout d'une communication réseau multijoueur pour modifier la grille simultanément.",
+            "Récupération de nouvelles grilles via API publique",
+            "Ajout d'une vue responsive"
         ],
-        skills: [ "React.js", "HTML/CSS", "API", "", "", ""]
+        skills: [ "React.js", "HTML/CSS/JS", "API", "Javascript", "Rétroingénierie", "Node.js"],
+        template: "geometric",
+        demo: (<Grid></Grid>)
     }
 ]
 
+const gridSettings = {
+    "GRID_PROVIDER": {
+        "PROVIDER_NAME": "RCI-Jeux",
+        "PROVIDER_ADDR": "https://www.rcijeux.fr/drupal_game/notretemps/minifleches/grids/", //minifleches_0_1556.mfj
+        "PROVIDER_EXTENSION": ".mfj",
+    }
+}
 
-export {projectList}
+export {projectList, gridSettings}

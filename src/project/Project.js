@@ -1,20 +1,20 @@
-import ReactPlayer from "react-player";
 import "./Project.css"
 
 const Project = (props) => {
 
+    let reverseClassName = (props.reversed) ? 'reversed-layout' : '';
+
     return (
-        <div className="project" style={{
+        <div className={`project ${props.template}-template`} style={{
             backgroundImage: `url("/assets/${props.id}/background.png")`
           }}>
-            <span className="project-title neon-text neon-border">{props.title}</span>
-            <p className="project-desc">{props.description}</p>
-            <div className="project-container">
+            <span className={`project-title ${props.template}-text ${props.template}-border`}>{props.title}</span>
+            <p className={`project-desc ${props.template}-desc`}>{props.description}</p>
+            <div className={`project-container ${reverseClassName}`}>
                <div className="project-info">
-                   
                     <div className="project-steps">
                         {props.steps.map(item => (
-                            <span className="project-step neon-border-small">{item}</span>
+                            <span className={`project-step ${props.template}-step ${props.template}-text--small ${props.template}-border--small`}>{item}</span>
                         ))}
                     </div>
                 
@@ -25,13 +25,7 @@ const Project = (props) => {
                     </div>
                 </div>
                 <div className="project-demo">
-                <ReactPlayer
-                    className='react-player neon-border'
-                    url={`/assets/${props.id}/video.mp4`}
-                    width={'fit-content'}
-                    height={'90%'}
-                    controls = {true}
-                />
+                    {props.demo}
                 </div>
             </div>
            

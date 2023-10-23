@@ -1,0 +1,39 @@
+.grid__row {
+    display: flex;
+}
+
+.current-word {
+    background-color: #6eb0bf !important;
+}
+
+#grid {
+    position: relative;
+}
+
+.no-more-grid {
+    color: black;
+}
+
+.grid-won {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-won span {
+    margin-bottom: 20px;
+}
+
+.grid-won button {
+    background-color: #96BEB9;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

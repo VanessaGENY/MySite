@@ -1,12 +1,23 @@
 .project {
     display: flex;
     flex-direction: column;
-    color: white;
     padding: 10px;
     background-color: black;
     align-items: center;
     height: calc(100vh - 20px);
     background-size: cover;
+}
+
+.reversed-layout {
+    flex-direction: row-reverse;
+}
+
+.neon-template {
+    color: white;
+}
+
+.geometric-template {
+    color: black;
 }
 
 .neon-text {
@@ -31,10 +42,17 @@
     margin: 25px 0;
 }
 
-.project-desc {
+.neon-desc {
     color: #9da0b1;
 }
 
+.geometric-desc {
+    color: #27546b;
+}
+
+.geometric-step {
+    border-bottom: 1px dashed black;
+}
 .project-container {
     display: flex;
     align-items: center;
@@ -102,7 +120,7 @@
     inset 0 0 32px rgba(30,132,242,0.78);
 }
 
-.neon-border-small {
+.neon-border--small {
     border: 3px solid whitesmoke;
     border-radius: 25px;
     box-shadow:

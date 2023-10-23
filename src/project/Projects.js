@@ -4,8 +4,8 @@ import Project from "./Project";
 const Projects = () => {
     return (
         <div>
-            {projectList.map(item => (
-                <Project {...item}></Project>
+            {projectList.map((item, index) => (
+                <Project {...item} reversed={index%2===1}></Project>
             ))}
         </div>
     )
