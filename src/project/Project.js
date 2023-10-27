@@ -6,7 +6,7 @@ const Project = (props) => {
 
     return (
         <div className={`project ${props.template}-template`} style={{
-            backgroundImage: `url("/assets/${props.id}/background.png")`
+            backgroundImage: `url("/assets/projects/${props.id}/background.png")`
           }}>
             <span className={`project-title ${props.template}-text ${props.template}-border`}>{props.title}</span>
             <p className={`project-desc ${props.template}-desc`}>{props.description}</p>
