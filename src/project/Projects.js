@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { projectList } from "../shared/global";
 import Project from "./Project";
 
@@ -18,7 +18,7 @@ const Projects = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    });
 
     useEffect(() => {
         if (scrollingDown !==  undefined) {
@@ -35,7 +35,7 @@ const Projects = () => {
             setScrollingDown(undefined)
         }
         
-    }, [scrollingDown])
+    }, [scrollingDown, currentScrollY])
 
     return (
         <div style={{scrollBehavior: 'smooth'}}>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import getGrid from "./hook/useGrid";
 import "./Grid.css";
 import Case from "./Case";
@@ -21,24 +21,6 @@ const Grid = (props) => {
     const [lastClickPos, setLastClickPos] = useState()
     const [isWon, setIsWon] = useState(false);
     const [noMoreGrid, setNoMoreGrid] = useState(false)
-
-
-    useEffect( () => {
-        if (checkWord) {
-            let isWordOK = true;
-            currentWord.forEach(index => {
-                if (getCaseValue(index) !== grid.solution[index]) {
-                    isWordOK = false;
-                }
-            });
-            if (isWordOK) {
-                disableWord();
-                isEveryWordFound();
-            }
-            setCheckWord(false)
-        }
-        
-    }, [checkWord, currentWord])
 
     const replay = () => {
         let gDone = gridsDone;
@@ -63,23 +45,17 @@ const Grid = (props) => {
         setIsWon(isFull);
     }
 
-    const disableWord = () => {
-        currentWord.forEach(index => {
-            casesRef.current[index].children[0].disabled = true;
-        });
-    }
-
     const onKeyPress = (pos,event) => {
         if(event.keyCode === 8 && getCaseValue(pos) === "") {
             checkCursorDirection("", pos)
         }
     }
 
-    const getCaseValue = (pos) => {
+    const getCaseValue = useCallback((pos) => {
         if (isLetter(pos)) {
             return casesRef.current[pos].children[0].value.toUpperCase();
         }
-    }
+    }, [casesRef])
 
     const onClick = (pos) => {
         let direction;
@@ -215,6 +191,28 @@ const Grid = (props) => {
         const exists = casesRef.current[pos];
         return exists && casesRef.current[pos].className.includes("case__letter");
     }
+
+    useEffect( () => {
+        const disableWord = () => {
+            currentWord.forEach(index => {
+                casesRef.current[index].children[0].disabled = true;
+            });
+        }
+        if (checkWord) {
+            let isWordOK = true;
+            currentWord.forEach(index => {
+                if (getCaseValue(index) !== grid.solution[index]) {
+                    isWordOK = false;
+                }
+            });
+            if (isWordOK) {
+                disableWord();
+                isEveryWordFound();
+            }
+            setCheckWord(false)
+        }
+        
+    }, [checkWord, currentWord, getCaseValue, grid.solution])
 
     return (
         <div id="grid">
