@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7760ac1e.css",
-    "main.js": "/static/js/main.711d057f.js",
-    "static/js/787.a5fa54f9.chunk.js": "/static/js/787.a5fa54f9.chunk.js",
-    "index.html": "/index.html",
-    "main.7760ac1e.css.map": "/static/css/main.7760ac1e.css.map",
-    "main.711d057f.js.map": "/static/js/main.711d057f.js.map",
-    "787.a5fa54f9.chunk.js.map": "/static/js/787.a5fa54f9.chunk.js.map"
+    "main.css": "/vanessa.geny.github.io/my-site/static/css/main.7760ac1e.css",
+    "main.js": "/vanessa.geny.github.io/my-site/static/js/main.03259a3d.js",
+    "static/js/787.a5fa54f9.chunk.js": "/vanessa.geny.github.io/my-site/static/js/787.a5fa54f9.chunk.js",
+    "index.html": "/vanessa.geny.github.io/my-site/index.html",
+    "main.7760ac1e.css.map": "/vanessa.geny.github.io/my-site/static/css/main.7760ac1e.css.map",
+    "main.03259a3d.js.map": "/vanessa.geny.github.io/my-site/static/js/main.03259a3d.js.map",
+    "787.a5fa54f9.chunk.js.map": "/vanessa.geny.github.io/my-site/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7760ac1e.css",
-    "static/js/main.711d057f.js"
+    "static/js/main.03259a3d.js"
   ]
 }
