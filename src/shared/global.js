@@ -1,6 +1,8 @@
 import ReactPlayer from "react-player"
 import Grid from "../demo/grid/Grid"
 
+const BASE_ASSETS_URL = `${process.env.PUBLIC_URL}`;
+
 const projectList = [
     {
         id: "leds",
@@ -17,9 +19,9 @@ const projectList = [
         template: "neon",
         demo: (<ReactPlayer
             className='react-player neon-border'
-            url={`/assets/projects/leds/video.mp4`}
+            url={`${BASE_ASSETS_URL}/assets/projects/leds/video.mp4`}
             width={'fit-content'}
-            height={'90%'}
+            height={'fit-content'}
             controls={true}
         />)
     },
@@ -72,4 +74,4 @@ const gridSettings = {
     }
 }
 
-export { projectList, gridSettings, gameList }
+export { BASE_ASSETS_URL, projectList, gridSettings, gameList }

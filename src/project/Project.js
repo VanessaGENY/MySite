@@ -1,3 +1,4 @@
+import { BASE_ASSETS_URL } from "../shared/global";
 import "./Project.css"
 
 const Project = (props) => {
@@ -6,7 +7,7 @@ const Project = (props) => {
 
     return (
         <div className={`project ${props.template}-template`} style={{
-            backgroundImage: `url("/assets/projects/${props.id}/background.png")`
+            backgroundImage: `url("${BASE_ASSETS_URL}/assets/projects/${props.id}/background.png")`
           }}>
             <span className={`project-title ${props.template}-text ${props.template}-border`}>{props.title}</span>
             <p className={`project-desc ${props.template}-desc`}>{props.description}</p>

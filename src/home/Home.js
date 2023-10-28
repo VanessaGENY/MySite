@@ -1,3 +1,4 @@
+import ImageViewer from "../shared/component/ImageViewer"
 import "./Home.css"
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
         return (
             <div className="personal-card">
                 <div className="profile-picture">
-                    <img src="/assets/home/profile.png" alt="" />
+                    <ImageViewer src="/assets/home/profile.png" alt="" />
                 </div>
                 <div className="profile-info">
                     <div className="profile-text">
@@ -16,8 +17,8 @@ const Home = () => {
                     </div>
                     <div className="social-networks">
                         <a className="cv-download" href="/assets/CV_Vanessa_Geny.pdf" download={true}><div className="cv-download-button"><span>Télécharger mon CV</span></div></a>
-                        <a href="https://www.linkedin.com/in/vanessa-geny-050bb113a/" target="_blank" rel="noreferrer" className="social-link"><img src="/assets/home/linkedin.png" alt="linkedin-logo"/></a>
-                        <a href="https://github.com/VanessaGENY/MySite" className="social-link" target="_blank" rel="noreferrer" ><img src="/assets/home/github-icon-white.png" alt="linkedin-logo"/></a>
+                        <a href="https://www.linkedin.com/in/vanessa-geny-050bb113a/" target="_blank" rel="noreferrer" className="social-link"><ImageViewer src="/assets/home/linkedin.png" alt="linkedin-logo"/></a>
+                        <a href="https://github.com/VanessaGENY/MySite" className="social-link" target="_blank" rel="noreferrer" ><ImageViewer src="/assets/home/github-icon-white.png" alt="linkedin-logo"/></a>
                     </div>
                     
                 </div>
