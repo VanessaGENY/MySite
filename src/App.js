@@ -7,7 +7,7 @@ import Home from './home/Home';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
