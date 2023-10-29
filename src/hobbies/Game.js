@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { gameList } from "../shared/global";
+import { BASE_ASSETS_URL, gameList } from "../shared/global";
 import "./Game.css"
 import GameCard from "./GameCard";
 
@@ -74,7 +74,7 @@ const Game = () => {
     }, [currentAnimation, getNextIndex, getPreviousIndex]);
 
     return (
-        <div className="games" style={{ backgroundImage: `url("/assets/games/${gameList[currentIndex].id}/background.png")`, transition: "all .5s ease", }}>
+        <div className="games" style={{ backgroundImage: `url("${BASE_ASSETS_URL}/assets/games/${gameList[currentIndex].id}/background.png")`, transition: "all .5s ease", }}>
             {addPreviousButton()}
             {gameList.map((game, index) => {
                 if (isDisplayed(index))
