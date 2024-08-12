@@ -17,8 +17,8 @@ const Home = () => {
             <div className="profile-text">
               <span>
                 Enchantée, je suis{" "}
-                <span className="highlight-text">Vanessa GENY</span>, ingénieur
-                logiciel spécialisée dans le front-end.
+                <span className="highlight-text">Vanessa GENY</span>, Tech Lead
+                spécialisée dans le front-end.
               </span>
               <span className="subtext">
                 Ceci est mon site web et les sources sont sur mon Github !
