@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/MySite/static/css/main.735ec66f.css",
-    "main.js": "/MySite/static/js/main.871dd0eb.js",
+    "main.css": "/MySite/static/css/main.e80520e7.css",
+    "main.js": "/MySite/static/js/main.219849c7.js",
     "static/js/787.a5fa54f9.chunk.js": "/MySite/static/js/787.a5fa54f9.chunk.js",
+    "static/media/a-casque-2022.jpg": "/MySite/static/media/a-casque-2022.d0fa31a574476af96fa2.jpg",
+    "static/media/f-oeil.jpg": "/MySite/static/media/f-oeil.6b8352c9106660f76507.jpg",
+    "static/media/b-crane-2022.jpg": "/MySite/static/media/b-crane-2022.bacaac498d5197e5e4f0.jpg",
+    "static/media/h-crane-2019.jpg": "/MySite/static/media/h-crane-2019.198a57ffccceaf8e7cc6.jpg",
+    "static/media/e-bouche.jpg": "/MySite/static/media/e-bouche.488fca454bbe3543d773.jpg",
+    "static/media/l-rose-2015.jpg": "/MySite/static/media/l-rose-2015.f02589480c693e676856.jpg",
+    "static/media/d-main-fermee.jpg": "/MySite/static/media/d-main-fermee.cb5ce2d1e9fce384af8e.jpg",
+    "static/media/g-rose-2019.jpeg": "/MySite/static/media/g-rose-2019.75f1c1aa6db3c8fe4bdb.jpeg",
+    "static/media/c-main-ouverte.jpg": "/MySite/static/media/c-main-ouverte.438a8b0eb417488b291d.jpg",
+    "static/media/i-deadpools.jpg": "/MySite/static/media/i-deadpools.b3fea8df83ba977c45c7.jpg",
+    "static/media/k-crane-2015.jpg": "/MySite/static/media/k-crane-2015.f6769a709a7f3c110df2.jpg",
+    "static/media/j-iron-man.jpg": "/MySite/static/media/j-iron-man.633c79d3129576cb274c.jpg",
     "index.html": "/MySite/index.html",
-    "main.735ec66f.css.map": "/MySite/static/css/main.735ec66f.css.map",
-    "main.871dd0eb.js.map": "/MySite/static/js/main.871dd0eb.js.map",
+    "main.e80520e7.css.map": "/MySite/static/css/main.e80520e7.css.map",
+    "main.219849c7.js.map": "/MySite/static/js/main.219849c7.js.map",
     "787.a5fa54f9.chunk.js.map": "/MySite/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.735ec66f.css",
-    "static/js/main.871dd0eb.js"
+    "static/css/main.e80520e7.css",
+    "static/js/main.219849c7.js"
   ]
 }
