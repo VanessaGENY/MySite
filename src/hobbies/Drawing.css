@@ -1,0 +1,13 @@
+.drawing__container {
+  border: 5px solid black;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+.drawing__container img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 500px;
+}

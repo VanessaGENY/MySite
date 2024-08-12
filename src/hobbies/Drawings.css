@@ -1,0 +1,33 @@
+.drawings__container {
+  min-height: calc(100vh - 80px);
+
+  padding-top: 80px;
+}
+
+.drawings__list {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.drawings__title {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 35px;
+  color: white;
+}
+
+.drawings__title > .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.drawings__title > .subtitle {
+  font-style: italic;
+}

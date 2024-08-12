@@ -1,11 +1,13 @@
-import Game from "./Game"
+import Drawings from "./Drawings";
+import Game from "./Game";
 
 const Hobbies = () => {
-
-    return (
+  return (
     <div>
-        <Game></Game>
-    </div>)
-}
+      <Game></Game>
+      <Drawings></Drawings>
+    </div>
+  );
+};
 
 export default Hobbies;
