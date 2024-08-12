@@ -220,10 +220,10 @@ const Grid = (props) => {
                 <span>Bravo !</span>
                 <button onClick={replay}>Nouvelle Grille</button>
             </div>)}
-            {grid && grid.cases.map((row) => (
-                <div className="grid__row">
-                    {row.map((c) => (
-                        <Case {...c} ref={(element) => casesRef.current.push(element)} onInputChange={onInputChange} onClick={onClick} onKeyPress={onKeyPress}></Case>
+            {grid && grid.cases.map((row, index) => (
+                <div key={`grid-row-${index}`} className="grid__row">
+                    {row.map((c, i) => (
+                        <Case {...c} ref={(element) => casesRef.current.push(element)} onInputChange={onInputChange} onClick={onClick} onKeyPress={onKeyPress} key={`grid-case-${row}-${i}`}></Case>
                     ))}
                 </div>
             ))}

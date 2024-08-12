@@ -8,7 +8,15 @@ const Game = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentAnimation, setCurrentAnimation] = useState("");
+    const defaultImage = new Image();
+    defaultImage.src = `${BASE_ASSETS_URL}/assets/games/${gameList[currentIndex].id}/background.png`
+    const [img, setImg] = useState(defaultImage)
 
+    useEffect(() => {
+        const i = new Image();
+        i.src = `${BASE_ASSETS_URL}/assets/games/${gameList[currentIndex].id}/background.png`
+        setImg(i)
+    }, [currentIndex])
 
     const delay = ms => new Promise(
         resolve => setTimeout(resolve, ms)
@@ -74,11 +82,11 @@ const Game = () => {
     }, [currentAnimation, getNextIndex, getPreviousIndex]);
 
     return (
-        <div className="games" style={{ backgroundImage: `url("${BASE_ASSETS_URL}/assets/games/${gameList[currentIndex].id}/background.png")`, transition: "all .5s ease", }}>
+        <div className="games" style={{ backgroundImage: `url("${img.src}")`, transition: "all .5s ease", }}>
             {addPreviousButton()}
             {gameList.map((game, index) => {
                 if (isDisplayed(index))
-                    return (<div className={getClassName(index)}>
+                    return (<div key={`game-${index}`} className={getClassName(index)}>
                         <GameCard {...game} />
                     </div>)
                 return undefined;

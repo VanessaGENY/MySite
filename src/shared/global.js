@@ -52,7 +52,7 @@ const gameList = [
     {
         id: "wwh",
         title: "We Were Here",
-        desc: "Gamme de jeux de coopération, les jeux We Were Here demande une communication claire, un travail d'équipe, de la patience et une dose de reflexion."
+        desc: "Gamme de jeux de coopération, les jeux We Were Here demandent une communication claire, un travail d'équipe, de la patience et une dose de reflexion."
     },
     {
         id: "ffxiv",
@@ -62,7 +62,7 @@ const gameList = [
     {
         id: "cos",
         title: "Chant of Sennaar",
-        desc: "Jeu français où l'on explore la tour de Babel et ses mystères. Le hic ? A chaque étage son peuple et sa propre langue à déchiffrer."
+        desc: "Jeu français où l'on explore la tour de Babel et ses mystères. Le hic ? A chaque étage son peuple et sa propre langue à déchiffrer et leur propre culture à comprendre.."
     }
 ]
 

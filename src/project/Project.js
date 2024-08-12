@@ -4,7 +4,6 @@ import "./Project.css"
 const Project = (props) => {
 
     let reverseClassName = (props.reversed) ? 'reversed-layout' : '';
-
     return (
         <div className={`project ${props.template}-template`} style={{
             backgroundImage: `url("${BASE_ASSETS_URL}/assets/projects/${props.id}/background.png")`
@@ -14,14 +13,14 @@ const Project = (props) => {
             <div className={`project-container ${reverseClassName}`}>
                <div className="project-info">
                     <div className="project-steps">
-                        {props.steps.map(item => (
-                            <span className={`project-step ${props.template}-step ${props.template}-text--small ${props.template}-border--small`}>{item}</span>
+                        {props.steps.map((item, index) => (
+                            <span key={`${props.title}-step-${index}`} className={`project-step ${props.template}-step ${props.template}-text--small ${props.template}-border--small`}>{item}</span>
                         ))}
                     </div>
                 
                     <div  className="project-skills">
-                        {props.skills.map(item => (
-                            <span className="project-skill">{item}</span>
+                        {props.skills.map((item, index) => (
+                            <span key={`${props.title}-skill-${index}`} className="project-skill">{item}</span>
                         ))}
                     </div>
                 </div>
