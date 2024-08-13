@@ -20,12 +20,13 @@
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 55px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 15;
+  float: left;
 }
 
 .active {

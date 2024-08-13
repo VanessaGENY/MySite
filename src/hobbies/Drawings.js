@@ -1,17 +1,25 @@
+import NavButton from "../shared/component/NavButton";
 import { BASE_ASSETS_URL } from "../shared/global";
 import Drawing from "./Drawing";
 import "./Drawings.css";
 
 const Drawings = (props) => {
-  const drawingsFolder = require.context("../../public/assets/drawings", true);
+  const drawingsFolder = require.context("../../public/assets/", true);
 
-  const drawingList = drawingsFolder.keys().map((drawing) => {
-    const i = new Image();
-    i.src = `${BASE_ASSETS_URL}/assets/drawings/${drawing.slice(2)}`;
-    return i;
-  });
+  const drawingList = drawingsFolder
+    .keys()
+    .filter((k) => k.startsWith("./drawings"))
+    .reverse()
+    .map((drawing) => {
+      const i = new Image();
+      console.log(drawing);
+      i.src = `${BASE_ASSETS_URL}/assets/${drawing.slice(2)}`;
+      return i;
+    });
 
-  console.log(drawingList);
+  const addGamesButton = () => {
+    return <NavButton up uri="#games" text="Jeux Vidéos" />;
+  };
 
   return (
     <div id="drawings" className="drawings__container">
@@ -24,6 +32,7 @@ const Drawings = (props) => {
           <Drawing key={index} url={drawing.src} />
         ))}
       </div>
+      {addGamesButton()}
     </div>
   );
 };

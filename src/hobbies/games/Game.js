@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import { BASE_ASSETS_URL, gameList } from "../shared/global";
-import "./Game.css";
+import { BASE_ASSETS_URL, gameList } from "../../shared/global";
+import "./Game.scss";
 import GameCard from "./GameCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import NavButton from "../../shared/component/NavButton";
 
 const Game = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,17 +86,7 @@ const Game = () => {
   };
 
   const addDrawingButton = () => {
-    return (
-      <div
-        className={`go-down__button`}
-        onClick={() => (window.location.href = "#drawings")}
-      >
-        <div className="icon">
-          <FontAwesomeIcon icon={faAngleDown} />
-        </div>
-        <span className="text">Mes dessins</span>
-      </div>
-    );
+    return <NavButton down uri="#drawings" text="Mes Dessins" />;
   };
 
   useEffect(() => {
@@ -118,6 +107,7 @@ const Game = () => {
 
   return (
     <div
+      id="games"
       className="games"
       style={{
         backgroundImage: `url("${img.src}")`,

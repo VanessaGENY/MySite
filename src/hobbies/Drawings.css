@@ -1,7 +1,8 @@
 .drawings__container {
   min-height: calc(100vh - 80px);
-
+  position: relative;
   padding-top: 80px;
+  width: 100%;
 }
 
 .drawings__list {

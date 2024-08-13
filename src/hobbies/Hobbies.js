@@ -1,5 +1,5 @@
 import Drawings from "./Drawings";
-import Game from "./Game";
+import Game from "./games/Game";
 
 const Hobbies = () => {
   return (
