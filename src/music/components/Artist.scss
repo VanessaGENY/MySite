@@ -1,0 +1,76 @@
+$imgSize: 200px;
+
+.artist-container {
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 4px 4px 10px 0px black;
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artist-header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    gap: 30px;
+}
+
+.artist-header > * {
+    flex: 1;
+}
+
+.artist-img {
+    border-radius: 50%;
+    max-width: $imgSize;
+    width: $imgSize;
+    max-height: $imgSize;
+    height: $imgSize;
+    background-position: center;
+    background-size: contain;
+}
+
+.artist-name {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+
+    $imgSize: 100px;
+
+    .artist-container {
+        width: 300px;
+    }
+    .artist-img {
+        border-radius: 50%;
+        max-width: $imgSize;
+        width: $imgSize;
+        max-height: $imgSize;
+        height: $imgSize;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .artist-name {
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+
+    iframe {
+        width: 300px !important;
+        height: 175px !important;
+    }
+    
+}

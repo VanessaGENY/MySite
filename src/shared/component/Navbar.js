@@ -1,5 +1,5 @@
-import "./Navbar.css"
-import { NavLink } from 'react-router-dom';
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,21 +7,29 @@ const Navbar = () => {
       <div className="nav__container">
         <ul className="nav__list">
           <li className="nav__item">
-            <NavLink className="nav__link" exact to="/">Accueil</NavLink>
+            <NavLink className="nav__link" exact to="/">
+              Accueil
+            </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink className="nav__link" exact to="/projects">Projets</NavLink>
+            <NavLink className="nav__link" exact to="/projects">
+              Projets
+            </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink className="nav__link" exact to="/hobbies">Hobbies</NavLink>
+            <NavLink className="nav__link" exact to="/hobbies">
+              Hobbies
+            </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink className="nav__link" exact to="/contacts">Contacts</NavLink>
+            <NavLink className="nav__link" exact to="/music">
+              Musique
+            </NavLink>
           </li>
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;
