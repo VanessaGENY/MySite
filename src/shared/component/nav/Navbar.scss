@@ -1,12 +1,15 @@
+@import  '../../theme';
+
 .nav__list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 15px;
   list-style: none;
   text-transform: uppercase;
   color: white;
   font-weight: bold;
+  margin: 0;
 }
 
 .nav__container {
@@ -20,7 +23,7 @@
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 55px;
   width: 100%;
@@ -29,8 +32,14 @@
   float: left;
 }
 
-.active {
-  color: #00e1ff;
+.selected {
+  color: $blue;
+}
+
+.selected:hover {
+  color: $blue;
+  cursor: default;
+  text-decoration: none !important;
 }
 
 @media screen and (max-width: 900px) {

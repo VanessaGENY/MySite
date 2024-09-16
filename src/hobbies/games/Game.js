@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { BASE_ASSETS_URL, gameList } from "../../shared/global";
 import "./Game.scss";
 import GameCard from "./GameCard";
-import NavButton from "../../shared/component/NavButton";
+import NavButton from "../../shared/component/nav/NavButton";
 
 const Game = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -4,11 +4,6 @@ import "./Music.scss";
 const Music = () => {
   return (
     <div>
-      <h2 style={{ color: "white" }}>
-        Mes artistes préférés et mes coups de ❤️
-      </h2>
-      <FavArtists />
-      <div className="section-break" />
       <div className="music-intro">
         Enfant d'une famille de musiciens, la musique a toujours fait partie
         intégrante de ma vie. Jeune, j'écoutais les compositions de mon père
@@ -24,11 +19,21 @@ const Music = () => {
         pépites !
       </div>
       <div className="section-break" />
-      <img
-        src="https://numerique.meudon.fr/wp-content/uploads/2021/07/imgbin_under-construction-icon-computer-icons-architectural-engineering-png.png"
-        alt=""
-        style={{ width: "50%" }}
-      />
+      <h2 id="heart" style={{ color: "white" }}>
+        Mes artistes préférés et mes coups de ❤️
+      </h2>
+      <FavArtists />
+      <div className="section-break" />
+      <h2 id="heart" style={{ color: "white" }}>
+        Mon instrument
+      </h2>
+      <div>
+        <img
+          src="https://numerique.meudon.fr/wp-content/uploads/2021/07/imgbin_under-construction-icon-computer-icons-architectural-engineering-png.png"
+          alt=""
+          style={{ width: "50%", maxWidth: "500px" }}
+        />
+      </div>
     </div>
   );
 };

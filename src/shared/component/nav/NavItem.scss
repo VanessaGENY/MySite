@@ -1,0 +1,52 @@
+@import '../../theme.scss';
+
+$backgroundColor: rgba(0,0,0,0.5);
+
+.nav-item--container {
+    width: 150px;
+    max-width: 150px;
+}
+
+
+.nav-item--container:hover {
+    .nav-item--link {
+        background-color: $backgroundColor;
+    }
+    .nav-item--subsections {
+        display: flex;
+    }
+}
+
+.nav-item--link {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item--subsections {
+
+    display: none;
+    flex-direction: column;
+    background-color: $backgroundColor;
+}
+
+.nav-link--wrapper{
+    padding: 20px;
+}
+
+.nav__link {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 2px;
+    background-image: linear-gradient($blue 0 0);
+    background-position: right -100% bottom 0;
+    background-size: 200% 3px;
+    background-repeat: no-repeat;
+}
+
+.nav-item--container a:hover {
+    background-position: left -105% bottom 0;
+    transition: background-position 0.5s;
+}

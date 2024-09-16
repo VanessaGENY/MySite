@@ -1,4 +1,4 @@
-import NavButton from "../shared/component/NavButton";
+import NavButton from "../shared/component/nav/NavButton";
 import { BASE_ASSETS_URL } from "../shared/global";
 import Drawing from "./Drawing";
 import "./Drawings.css";
