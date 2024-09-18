@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MySite/static/css/main.813e432d.css",
-    "main.js": "/MySite/static/js/main.dc928027.js",
+    "main.css": "/MySite/static/css/main.8ba6d779.css",
+    "main.js": "/MySite/static/js/main.94662ca1.js",
     "static/js/787.a5fa54f9.chunk.js": "/MySite/static/js/787.a5fa54f9.chunk.js",
     "static/media/video.mp4": "/MySite/static/media/video.16b99d7b55b202a1eca2.mp4",
     "static/media/2022-05-21-casque-2022.jpg": "/MySite/static/media/2022-05-21-casque-2022.d0fa31a574476af96fa2.jpg",
@@ -23,12 +23,12 @@
     "static/media/CV_Vanessa_Geny.pdf": "/MySite/static/media/CV_Vanessa_Geny.d94ed22b783d922be4ca.pdf",
     "static/media/linkedin.png": "/MySite/static/media/linkedin.cd71fb396f73fb1f27d4.png",
     "index.html": "/MySite/index.html",
-    "main.813e432d.css.map": "/MySite/static/css/main.813e432d.css.map",
-    "main.dc928027.js.map": "/MySite/static/js/main.dc928027.js.map",
+    "main.8ba6d779.css.map": "/MySite/static/css/main.8ba6d779.css.map",
+    "main.94662ca1.js.map": "/MySite/static/js/main.94662ca1.js.map",
     "787.a5fa54f9.chunk.js.map": "/MySite/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.813e432d.css",
-    "static/js/main.dc928027.js"
+    "static/css/main.8ba6d779.css",
+    "static/js/main.94662ca1.js"
   ]
 }
