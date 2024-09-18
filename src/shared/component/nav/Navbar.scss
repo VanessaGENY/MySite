@@ -42,10 +42,24 @@
   text-decoration: none !important;
 }
 
+.nav__burger {
+  position: absolute;
+  color: white;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 900px) {
   .nav__list {
     padding-inline-start: 0;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav__list > li {
+    width: 100%;
   }
 }
