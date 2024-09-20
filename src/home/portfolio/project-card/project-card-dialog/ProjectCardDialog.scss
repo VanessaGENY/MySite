@@ -1,0 +1,72 @@
+@import "../../../../shared/theme.scss";
+
+
+.dialog-content__container {
+    width: fit-content;
+    height: 600px;
+    background-color: $background;
+    display: flex;
+}
+
+.dialog-content__projects {
+    width: 800px;
+}
+
+.tabs__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    
+    width: fit-content;
+}
+
+.tab__header {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.active-tab {
+    color: black;
+}
+
+.active-tab {
+    z-index: 3;
+}
+
+.glider {
+	position: absolute;
+	display: flex;
+	height: 54px;
+	width: 150px;
+	background-color: $blue;
+	z-index: 1;
+	border-radius: 99px; // just a high number to create pill effect
+	transition: 0.25s ease-out;
+    left: 20px;
+}
+
+.dialog-content__breaker {
+    height: 2px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: $blue;
+}
+
+.dialog-project-title {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    height: fit-content;
+}
+
