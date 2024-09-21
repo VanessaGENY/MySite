@@ -6,7 +6,7 @@ import Home from "./home/Home";
 import Navbar from "./shared/component/nav/Navbar";
 import Music from "./music/Music";
 import ScrollTopTop from "./shared/ScrollTopTop";
-import LinkedinService from "./services/Linkedin.service";
+//import LinkedinService from "./services/Linkedin.service";
 
 function App() {
   //LinkedinService();
