@@ -1,0 +1,26 @@
+@import "../../../shared/theme.scss";
+
+.project-card__logo {
+    max-width: 230px;
+    background-color: white;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.project-card__logo > img {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.project-card__container {
+    transition: all 0.5s ease-in-out;
+}
+
+.project-card__container:hover {
+    transform: scale(1.5); 
+    cursor: pointer;
+}

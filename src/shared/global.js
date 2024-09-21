@@ -2,6 +2,8 @@ import ReactPlayer from "react-player";
 import Grid from "../demo/grid/Grid";
 
 const BASE_ASSETS_URL = `${process.env.PUBLIC_URL}`;
+const LINKEDIN_API = "https://api.linkedin.com/v2";
+const LINKEDIN_AUTH_API = "https://www.linkedin.com/oauth/v2";
 
 const projectList = [
   {
@@ -90,4 +92,11 @@ const gridSettings = {
   },
 };
 
-export { BASE_ASSETS_URL, projectList, gridSettings, gameList };
+export {
+  BASE_ASSETS_URL,
+  LINKEDIN_API,
+  LINKEDIN_AUTH_API,
+  projectList,
+  gridSettings,
+  gameList,
+};

@@ -1,1 +1,24 @@
 $blue: #00e1ff;
+$lightText: white;
+$background: #282c34;
+
+.section-break {
+    width: 90%;
+    height: 0px;
+    border-top: 2px dashed rgba(255,255,255,0.3);
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    color: $lightText;
+    font-size: 30px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}

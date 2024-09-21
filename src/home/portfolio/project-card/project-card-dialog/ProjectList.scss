@@ -1,0 +1,35 @@
+@import "../../../../shared/theme.scss";
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 300px;
+    padding-left: 30px;
+    justify-content: space-evenly;
+}
+
+.project-list-item {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.active-project {
+    color: $blue;
+    font-weight: bold;
+    position: relative;
+}
+
+.active-project:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 25px;
+    height: 2px;
+    background-color: $blue;
+}
