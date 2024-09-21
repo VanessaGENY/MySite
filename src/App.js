@@ -9,7 +9,7 @@ import ScrollTopTop from "./shared/ScrollTopTop";
 import LinkedinService from "./services/Linkedin.service";
 
 function App() {
-  LinkedinService();
+  //LinkedinService();
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>

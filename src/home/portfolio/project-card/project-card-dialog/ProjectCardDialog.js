@@ -2,6 +2,8 @@ import { Dialog } from "@mui/material";
 import React from "react";
 import "./ProjectCardDialog.scss";
 import ProjectList from "./ProjectList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Tabs = {
   info: "Infos",
@@ -52,11 +54,17 @@ const ProjectCardDialog = (props) => {
   return (
     <div>
       <Dialog
-        open={true && props.projects}
+        open={props.open && props.projects}
         onClose={() => props.setOpen(!props.isOpen)}
         maxWidth="80%"
       >
         <div className="dialog-content__container">
+          <div
+            className="dialog-content__close-button"
+            onClick={() => props.setOpen(false)}
+          >
+            <FontAwesomeIcon icon={faXmark} />
+          </div>
           {props.projects && (
             <ProjectList
               projects={props.projects}
