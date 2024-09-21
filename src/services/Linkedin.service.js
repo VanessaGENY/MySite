@@ -1,14 +1,13 @@
 import React from "react";
-import { LINKEDIN_API, LINKEDIN_AUTH_API } from "../shared/global";
+import { LINKEDIN_AUTH_API } from "../shared/global";
 
 const LinkedinService = () => {
   const oauth_token = process.env.REACT_APP_LINKEDIN_TOKEN;
   const clientID = process.env.REACT_APP_CLIENT_ID;
   const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
 
-  const [token, setToken] = React.useState("");
-  const [data, setData] = React.useState({});
-  const headers = { Authorization: `Bearer ${token}` };
+  /*   const [token, setToken] = React.useState("");
+  const [data, setData] = React.useState({}); */
 
   const getAccessToken = () => {
     const url = `${LINKEDIN_AUTH_API}/accessToken`;
